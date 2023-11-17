@@ -18,9 +18,17 @@
     <ClInclude Include="Emoloyee.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
+    <ClInclude Include="Departament.h">
+    <ClInclude Include="Staff.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Emoloyee.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="Departament.cpp">
+    <ClCompile Include="Staff.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
   </ItemGroup>
