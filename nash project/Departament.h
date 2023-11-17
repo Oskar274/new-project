@@ -23,5 +23,7 @@ public:
 	void addEmployee(Employee* sotr);
 	void deleteEmployee(int index);
 	void findByCriteria(int criteria)const;
+
+
 };
 
