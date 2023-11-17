@@ -138,13 +138,10 @@
   <ItemGroup>
     <ClCompile Include="Departament.cpp" />
     <ClCompile Include="Emoloyee.cpp" />
-<<<<<<< HEAD
     <ClCompile Include="main.cpp" />
-=======
 
     <ClCompile Include="OutStaff.cpp" />
 
->>>>>>> a800a92c64756bee1f5889a6a26631d639771b29
     <ClCompile Include="Staff.cpp" />
 
   </ItemGroup>
