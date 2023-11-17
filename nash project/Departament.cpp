@@ -1,5 +1,15 @@
 #include "Departament.h"
 
+Departament::Departament()
+{
+    this->name = "none";
+}
+
+Departament::Departament(string name)
+{
+    this->name = name;
+}
+
 void Departament::setName(string name)
 {
 	this->name = name;
@@ -35,6 +45,62 @@ void Departament::deleteEmployee(int index)
 	}
 }
 
-void Departament::findEmployee() const
+void Departament::findByCriteria(int criteria) const
 {
+    string type;
+    string name;
+    string position;
+    float salary;
+    cin.ignore();
+
+    switch (criteria)
+    {
+    case 1:
+        getline(cin, type);
+        for (int i = 0; i < departament.size(); i++)
+        {
+            if (departament[i]->type() == type)
+            {
+                departament[i]->show();
+            }
+        }
+        break;
+
+    case 2:
+        getline(cin, name);
+        for (int i = 0; i < departament.size(); i++)
+        {
+            if (departament[i]->getName() == name)
+            {
+                departament[i]->show();
+            }
+        }
+        break;
+
+    case 3:
+        getline(cin, position);
+        for (int i = 0; i < departament.size(); i++)
+        {
+            if (departament[i]->getPosition() == position)
+            {
+                departament[i]->show();
+            }
+        }
+        break;
+
+    case 4:
+        for (int i = 0; i < departament.size(); i++)
+        {
+            if (departament[i]->getSalary() == salary)
+            {
+                departament[i]->show();
+            }
+        }
+        break;
+
+    default:
+        break;
+    }
 }
+
+
