@@ -47,4 +47,5 @@ string Employee::getPosition() const
 float Employee::getSalary() const
 {
 	return salary;
+
 }
