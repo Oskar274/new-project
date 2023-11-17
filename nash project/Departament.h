@@ -11,6 +11,9 @@ private:
 	vector<Employee*> departament;
 
 public:
+	Departament();
+	Departament(string name);
+	
 
 	void setName(string name);
 
@@ -19,6 +22,8 @@ public:
 	void show()const;
 	void addEmployee(Employee* sotr);
 	void deleteEmployee(int index);
-	void findEmployee()const;
+	void findByCriteria(int criteria)const;
+
+
 };
 
