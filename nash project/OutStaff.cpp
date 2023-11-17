@@ -12,6 +12,7 @@ void OutStaff::show() const
 {
     cout << "Name: " << name << endl;
     cout << "Salary" << salary << endl;
+
     cout << "Position" << position << endl;
 }
 
